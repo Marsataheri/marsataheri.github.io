@@ -5,6 +5,7 @@ body {
   background: #f9fafc;
   color: #333;
   line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
 }
 
 h1, h2, h3 {
@@ -27,6 +28,7 @@ a:hover {
   color: white;
   text-align: center;
   padding: 4rem 1rem;
+  position: relative;
 }
 
 .hero h1 {
@@ -49,9 +51,34 @@ a:hover {
   border-bottom: 2px solid white;
 }
 
+#darkModeToggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background: #fff;
+  color: #1a73e8;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#darkModeToggle:hover {
+  background: #eee;
+}
+
 /* Section Styling */
 .section {
   padding: 3rem 1rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .section.alt {
@@ -94,6 +121,11 @@ a:hover {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card h3 {
@@ -108,4 +140,27 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #121212;
+  color: #ddd;
+}
+
+body.dark .section.alt {
+  background: #1e1e1e;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  color: #ddd;
+}
+
+body.dark .btn {
+  background: #0077cc;
+}
+
+body.dark a {
+  color: #4dabf7;
 }
