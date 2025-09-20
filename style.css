@@ -1,61 +1,111 @@
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
-  line-height: 1.6;
-  background: #f8f9fa;
+  background: #f9fafc;
   color: #333;
+  line-height: 1.6;
 }
 
-header {
-  background: #1a1a1a;
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #1a73e8, #0d47a1);
   color: white;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
 }
 
-header h1 {
+.hero h1 {
+  font-size: 2.5rem;
   margin: 0;
-  font-size: 2rem;
 }
 
-header p {
-  margin-top: 0.5rem;
+.hero .tagline {
+  margin: 0.5rem 0 1.5rem;
+  font-size: 1.1rem;
 }
 
-nav {
-  margin-top: 1rem;
-}
-
-nav a {
+.hero nav a {
   color: white;
   margin: 0 1rem;
-  text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
-section {
-  padding: 2rem;
-  max-width: 800px;
+.hero nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* Section Styling */
+.section {
+  padding: 3rem 1rem;
+}
+
+.section.alt {
+  background: #eef2f7;
+}
+
+.container {
+  max-width: 900px;
   margin: auto;
 }
 
-section h2 {
-  color: #0073e6;
-  margin-bottom: 1rem;
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #1a73e8;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
 }
 
-.project {
+.btn:hover {
+  background: #0d47a1;
+}
+
+/* Skills */
+.skills li {
+  margin: 0.5rem 0;
+}
+
+/* Projects Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
   background: white;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+.card h3 {
+  margin-top: 0;
+  color: #1a73e8;
+}
+
+/* Footer */
 footer {
   background: #1a1a1a;
   color: white;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
+  font-size: 0.9rem;
 }
