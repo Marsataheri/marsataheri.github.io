@@ -5,63 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>[Your Name] – Data Scientist</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>[Your Full Name], PhD</h1>
-    <p>Data Scientist | Biomedical Engineering | Machine Learning | Neuroscience</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#resume">Resume</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- Header / Hero -->
+  <header class="hero">
+    <div class="container">
+      <h1>[Your Full Name], PhD</h1>
+      <p class="tagline">Data Scientist | Biomedical Engineering | Machine Learning | Neuroscience</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a Data Scientist with a PhD in Biomedical Engineering and extensive experience in 
-      neuroscience research, machine learning, and large-scale data analysis.
-      Skilled in Python, MATLAB, and modern ML tools, I bridge science and data-driven innovation.
-    </p>
-  </section>
-
-  <section id="resume">
-    <h2>Resume</h2>
-    <p><a href="My_Resume.pdf" target="_blank">📄 Download My Resume</a></p>
-    <ul>
-      <li><strong>Programming:</strong> Python, MATLAB, SQL, Machine Learning</li>
-      <li><strong>Data Analysis:</strong> Time-series analysis, signal processing, visualization</li>
-      <li><strong>Experience:</strong> Project Scientist (Neuroscience), Instructor in Computational Neuroscience</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Neural Data Classifier</h3>
-      <p>Built supervised ML models to classify brain states from high-dimensional neural recordings.</p>
-    </div>
-    <div class="project">
-      <h3>Signal Processing Toolkit</h3>
-      <p>Developed Python/MATLAB scripts for preprocessing and visualization of neuronal data.</p>
-    </div>
-    <div class="project">
-      <h3>Interactive Teaching Modules</h3>
-      <p>Created Jupyter notebooks to teach computational neuroscience and ML applications.</p>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a Data Scientist with a PhD in Biomedical Engineering and extensive experience in 
+        neuroscience research, machine learning, and large-scale data analysis. 
+        Skilled in Python, MATLAB, and modern ML tools, I bridge science and data-driven innovation.
+      </p>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-    <p>GitHub: <a href="https://github.com/marsataheri" target="_blank">github.com/yourusername</a></p>
+  <!-- Resume Section -->
+  <section id="resume" class="section alt">
+    <div class="container">
+      <h2>Resume</h2>
+      <p><a href="Data_Scientist_Resume.pdf" target="_blank" class="btn">📄 Download My Resume</a></p>
+      <ul class="skills">
+        <li><strong>Programming:</strong> Python, MATLAB, SQL, Machine Learning</li>
+        <li><strong>Data Analysis:</strong> Time-series analysis, signal processing, visualization</li>
+        <li><strong>Experience:</strong> Project Scientist (Neuroscience), Instructor in Computational Neuroscience</li>
+      </ul>
+    </div>
   </section>
 
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Neural Data Classifier</h3>
+          <p>Built supervised ML models to classify brain states from high-dimensional neural recordings.</p>
+        </div>
+        <div class="card">
+          <h3>Signal Processing Toolkit</h3>
+          <p>Developed Python/MATLAB scripts for preprocessing and visualization of neuronal data.</p>
+        </div>
+        <div class="card">
+          <h3>Interactive Teaching Modules</h3>
+          <p>Created Jupyter notebooks to teach computational neuroscience and ML applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© [Marsa] | Powered by GitHub Pages</p>
+    <div class="container">
+      <p>© [Your Name] | Powered by GitHub Pages</p>
+    </div>
   </footer>
 </body>
 </html>
